@@ -16,4 +16,3 @@ Router.map(function () {
   this.route('editPost', { path: '/posts/edit/:id', controller: Posts.edit });
 
 });//<end-routes>
-

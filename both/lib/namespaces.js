@@ -1,7 +1,3 @@
-/*global db:true */
+db = {}
 
-// Collections namespace
-db = {};
-
-// Resource namespaces
 Posts = {}

@@ -1,15 +1,24 @@
-<head>
-  <title>Microscope</title>
-</head>
-<body>
-  <div class="container">
-    <header class="navbar">
-      <div class="navbar-inner">
-        <a href="/" class="brand">Microscope</a>
+<template name='layout'>
+  {{> yield}}
+</template>
+
+<!-- Delete this and both/routes.js / route -->
+<template name='homeTemp'>
+  <head>
+    <title>Microscope</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="navbar">
+        <div class="navbar-inner">
+          <a href="/" class="brand">Microscope</a>
+        </div>
+      </header>
+      <div id="main" class="row-fluid">
+        {{> posts}}
       </div>
-    </header>
-    <div id="main" class="row-fluid">
-      {{> posts}}
     </div>
-  </div>
-</body>
+  </body>
+</template>
+
+
