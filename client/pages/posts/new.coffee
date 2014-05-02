@@ -1,9 +1,9 @@
-Template.newPosts.helpers {
+Template.newPost.helpers {
 
 }
 
-Template.newPosts.events {
+Template.newPost.events {
 
 }
 
-Template.newPosts.rendered = ->
+Template.newPost.rendered = ->

@@ -1,12 +1,8 @@
-Template.showPosts.helpers {
-  domain: ->
-    a = document.createElement 'a'
-    a.href = @.url
-    a.hostname
+Template.showPost.helpers {
 }
 
-Template.showPosts.events {
+Template.showPost.events {
 
 }
 
-Template.showPosts.rendered = ->
+Template.showPost.rendered = ->
