@@ -1,5 +1,3 @@
-Meteor.subscribe 'posts'
-
 Template.posts.helpers {
   posts: ->
     Posts.find()

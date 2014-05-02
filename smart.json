@@ -2,6 +2,7 @@
   "packages": {
     "iron-router": {},
     "blaze-layout": {},
-    "scss": {}
+    "scss": {},
+    "spin": {}
   }
 }
