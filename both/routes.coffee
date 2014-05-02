@@ -6,7 +6,7 @@ Router.configure {
 }
 
 Router.map ->
-  @.route 'posts',      { path: '/',           controller: Posts.index }
-  @.route 'showPost',  { path: '/posts/:_id', controller: Posts.show  }
-  @.route 'new', { path: '/submit',     controller: Posts.new   }
+  @.route 'posts',    { path: '/',            controller: Posts.index }
+  @.route 'showPost', { path: '/posts/:_id',  controller: Posts.show }
+  @.route 'new',      { path: '/submit',      controller: Posts.new }
 Router.onBeforeAction 'loading'

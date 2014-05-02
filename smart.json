@@ -3,6 +3,7 @@
     "iron-router": {},
     "blaze-layout": {},
     "scss": {},
-    "spin": {}
+    "spin": {},
+    "accounts-ui-bootstrap-dropdown": {}
   }
 }
