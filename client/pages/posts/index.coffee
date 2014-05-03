@@ -1,10 +1,6 @@
-Template.posts.helpers {
+Template.posts.helpers
   posts: ->
-    Posts.find()
-}
+    Posts.find {}, {sort: {submitted: -1}}
 
-Template.posts.events {
-
-}
-
+Template.posts.events
 Template.posts.rendered = ->
