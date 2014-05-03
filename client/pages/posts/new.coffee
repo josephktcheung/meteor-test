@@ -2,7 +2,7 @@ Template.newPost.helpers {
 
 }
 
-Template.newPost.events {
+Template.newPost.events
   'submit form': (e) ->
     e.preventDefault()
     post =
@@ -10,8 +10,9 @@ Template.newPost.events {
       title: $(e.target).find('[name=title]').val()
       message: $(e.target).find('[name=message]').val()
 
-    post._id = Posts.insert post
-    Router.go 'showPost', post
-}
+    Meteor.call 'post', post, (error, id) ->
+      if error
+        alert error.reason
+      Router.go 'showPost', {_id: id}
 
 Template.newPost.rendered = ->
