@@ -1,15 +1,15 @@
-if @Posts.find().count() == 0
-  @Posts.insert {
+if db.posts.find().count() == 0
+  db.posts.insert {
     title: 'Introducing Telescope'
     author: 'Sacha Greif'
     url: 'http://sachagreif.com/introducing-telescope/'
   }
-  @Posts.insert {
+  db.posts.insert {
     title: 'Meteor'
     author: 'Tom Coleman'
     url: 'http://meteor.com'
   }
-  @Posts.insert {
+  db.posts.insert {
     title: 'The Meteor Book'
     author: 'Tom Coleman'
     url: 'http://themeteorbook.com'

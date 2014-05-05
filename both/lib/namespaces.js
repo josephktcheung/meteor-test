@@ -1,3 +1,3 @@
-db = {}
+db = {};
 
-Posts = {}
+Posts = {};
